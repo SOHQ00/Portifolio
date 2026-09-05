@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR" style="scroll-behavior: smooth; min-height: 100%; height: auto; overflow-y: auto !important;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>Dev &amp; IA | Portfólio de Engenharia &amp; Inteligência Artificial</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#080f17",
+            "surface-container-low": "#151c25",
+            "surface-container": "#192029",
+            "surface-container-high": "#232a34",
+            "surface-container-highest": "#2e353f",
+            "surface": "#0d141d",
+            "background": "#0d141d",
+            "surface-bright": "#333a44",
+            "primary": "#4cd7f6",
+            "primary-container": "#06b6d4",
+            "on-primary": "#003640",
+            "on-primary-container": "#00424f",
+            "secondary": "#d0bcff",
+            "secondary-container": "#8b5cf6",
+            "on-secondary": "#3c0091",
+            "tertiary": "#ffb873",
+            "tertiary-container": "#e89337",
+            "on-surface": "#dce3f0",
+            "on-surface-variant": "#bcc9cd",
+            "outline": "#869397",
+            "outline-variant": "#3d494c",
+            "error": "#ffb4ab"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xxs": "0.25rem",
+            "space-xs": "0.5rem",
+            "space-sm": "0.75rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem",
+            "space-2xl": "3rem",
+            "space-3xl": "4rem",
+            "gutter-mobile": "1rem",
+            "container-max": "75rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "display-hero-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "code-md": ["JetBrains Mono", "monospace"],
+            "code-sm": ["JetBrains Mono", "monospace"],
+            "label-caps": ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    html, body {
+      width: 100%;
+      min-height: 100vh !important;
+      height: auto !important;
+      overflow-y: auto !important;
+      -webkit-overflow-scrolling: touch;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    .pb-safe { padding-bottom: max(env(safe-area-inset-bottom, 0px), 1rem); }
+    .pt-safe { padding-top: max(env(safe-area-inset-top, 0px), 0.5rem); }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #080f17; }
+    ::-webkit-scrollbar-thumb { background: #232a34; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary">
+<!-- HEADER FIXO -->
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high shadow-lg pt-safe">
+<div class="h-16 px-gutter-mobile flex items-center justify-between max-w-container-max mx-auto w-full">
+<a class="flex items-center gap-space-xs group" href="#inicio">
+<img alt="Logo Dev &amp; IA" class="h-8 w-auto object-contain rounded-md ring-1 ring-primary/20" src="https://lh3.googleusercontent.com/aida/AEtjO1WxAmFlhs6r1AMxxdaflkyCCjKoZuckvPRwMTMGPax_v1OI0kIokNA7KIcUZ4xa5ND6ZN-yUlR-1wH3keaNdECn4XIozc0igdgxX9NTLQb4AfdybQhHh5OFmFm9GQuiMg735Wt75AAWM3J7DlRx3UpzWSI3A2SgKnvtH7wJXhEhxOt7EAfrqr4htrG10ibaGBc9qPyagqtVW2B9Ls_CyLG4RWQiySNGbfX4P-caRojR8q7uUtp6RFBH5A8"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] tracking-tight text-on-surface leading-none group-hover:text-primary transition-colors">Dev &amp; IA</span>
+<span class="font-label-caps text-[10px] text-primary tracking-widest uppercase mt-0.5">Portfolio Hub</span>
+</div>
+</a>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-sm py-1.5 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface border border-outline-variant/40 flex items-center gap-1.5 transition-all text-xs font-code-sm" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank" title="Perfil GitHub Oficial">
+<span class="material-symbols-outlined text-[16px] text-primary">terminal</span>
+<span>github.com/SOHQ00</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary-container to-secondary-container flex items-center justify-center shrink-0 shadow-md hover:scale-105 transition-transform" href="#contato" title="Falar Comigo">
+<span class="material-symbols-outlined text-on-primary text-[18px]">send</span>
+</a>
+</div>
+</div>
+</header>
+<!-- CONTEÚDO PRINCIPAL (ROLAGEM LIVRE) -->
+<main class="flex-1 flex flex-col relative w-full pt-20 pb-32 bg-surface">
+<div class="flex flex-col w-full text-on-surface max-w-container-max mx-auto">
+<!-- SEÇÃO 1: HERO / APRESENTAÇÃO -->
+<section class="px-gutter-mobile py-space-xl flex flex-col gap-space-lg relative" id="inicio">
+<!-- Luz ambiente de fundo -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-44 right-0 w-64 h-64 bg-secondary-container/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Status Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-high border border-outline-variant/30 w-fit shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-code-sm text-xs text-primary font-medium tracking-wide">Disponível para novos projetos &amp; parcerias</span>
+</div>
+<!-- Título Principal -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display-hero-mobile text-3xl sm:text-5xl font-extrabold tracking-tight text-on-surface leading-tight">
+            Desenvolvedor <br/>
+<span class="bg-gradient-to-r from-primary via-primary-container to-secondary bg-clip-text text-transparent">
+              &amp; Especialista em IA
+            </span>
+</h1>
+<p class="font-body-md text-base text-on-surface-variant max-w-xl mt-space-xs leading-relaxed">
+            Criando soluções inovadoras na interseção entre Desenvolvimento Web moderno, Lógica de Programação e Inteligência Artificial Generativa com foco em performance e escala.
+          </p>
+</div>
+<!-- Terminal Interativo Estilizado -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-sm shadow-2xl border border-outline-variant/30 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between pb-space-xs px-space-xxs border-b border-outline-variant/20">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-error/70"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary/70"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-primary/70"></div>
+</div>
+<span class="font-code-sm text-xs text-on-surface-variant/80 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">terminal</span> bash ~ core-init
+            </span>
+<span class="font-code-sm text-xs text-primary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> ONLINE
+            </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg font-code-sm text-xs flex flex-col gap-1.5 text-on-surface overflow-x-auto leading-relaxed">
+<p class="text-on-surface-variant flex items-center gap-2">
+<span class="text-primary font-bold">&gt;</span> init stack --runtime=node20 --ai-kernel=groq-llama3 --cloud=active
+            </p>
+<p class="text-secondary flex items-center gap-2">
+<span class="text-secondary-fixed font-bold">[OK]</span> Embeddings vector store indexed in 18ms
+            </p>
+<p class="text-primary flex items-center gap-2">
+<span class="text-primary-fixed font-bold">[OK]</span> Fast HTTP server active at 0.0.0.0:8080
+            </p>
+<p class="text-tertiary flex items-center gap-2">
+<span class="text-tertiary-fixed font-bold">[SYS]</span> Neural orchestrator awaiting user prompts...
+            </p>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="text-primary font-bold">&gt;</span>
+<span class="inline-block w-2 h-4 bg-primary animate-pulse"></span>
+</div>
+</div>
+</div>
+<!-- CTAs de Destaque -->
+<div class="flex flex-col sm:flex-row gap-space-xs mt-space-xs">
+<a class="flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-headline-sm text-sm font-bold shadow-lg hover:shadow-cyan-500/20 active:scale-95 transition-all" href="#projetos">
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+<span>Ver Projetos</span>
+</a>
+<div class="grid grid-cols-2 gap-space-xs">
+<a class="flex items-center justify-center gap-1.5 px-space-sm py-3 rounded-xl bg-surface-container-high border border-outline-variant/30 text-on-surface font-body-sm text-sm hover:bg-surface-bright transition-colors text-center" href="#ia">
+<span class="material-symbols-outlined text-[18px] text-primary">psychology</span>
+<span>Habilidades IA</span>
+</a>
+<a class="flex items-center justify-center gap-1.5 px-space-sm py-3 rounded-xl bg-surface-container-high border border-outline-variant/30 text-on-surface font-body-sm text-sm hover:bg-surface-bright transition-colors text-center" href="#contato">
+<span class="material-symbols-outlined text-[18px] text-secondary">mail</span>
+<span>Contato</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SEÇÃO 2: SOBRE MIM -->
+<section class="px-gutter-mobile py-space-xl bg-surface-container-lowest/60 border-y border-outline-variant/20 flex flex-col gap-space-lg" id="sobre">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span class="font-label-caps text-xs uppercase tracking-wider">Perfil Profissional</span>
+</div>
+<h2 class="font-headline-lg-mobile text-2xl sm:text-3xl font-bold text-on-surface">
+            Engenharia Prática &amp; Inovação Contínua
+          </h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+            Com foco na evolução contínua e curiosidade técnica insaciável, dedico-me a transformar abstrações complexas e ideias arrojadas em aplicações reais, performáticas e intuitivas.
+          </p>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+            Minha abordagem combina o rigor dos fundamentos de algoritmos com a agilidade de prototipagem moderna e o potencial expansivo de Grandes Modelos de Linguagem (LLMs), criando ferramentas digitais centradas na melhor experiência.
+          </p>
+</div>
+<!-- Cards de Métricas / Destaques -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs">
+<div class="bg-surface-container p-space-md rounded-xl border border-outline-variant/20 flex flex-col gap-1 shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</div>
+<span class="font-headline-sm text-base text-on-surface font-bold">Código Limpo</span>
+<span class="font-body-sm text-xs text-on-surface-variant">Arquitetura modular, tipagem sólida e boas práticas de manutenibilidade.</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl border border-outline-variant/20 flex flex-col gap-1 shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[20px]">neurology</span>
+</div>
+<span class="font-headline-sm text-base text-on-surface font-bold">Arquitetura de IA</span>
+<span class="font-body-sm text-xs text-on-surface-variant">Engenharia de contexto, pipelines RAG e orquestração de LLMs com baixa latência.</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl border border-outline-variant/20 flex flex-col gap-1 shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary mb-1">
+<span class="material-symbols-outlined text-[20px]">touch_app</span>
+</div>
+<span class="font-headline-sm text-base text-on-surface font-bold">Design Centrado</span>
+<span class="font-body-sm text-xs text-on-surface-variant">Prototipação rápida e layouts responsivos concebidos para experiência fluida.</span>
+</div>
+</div>
+<!-- Chips / Tags de Competências -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<span class="font-code-sm text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Competências Chave</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">Front-End</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">Lógica de programação</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">Python</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">Java</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/20 border border-secondary/30 text-secondary font-code-sm text-xs flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> IA Generativa
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">Engenharia de Prompt</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">Chatbots</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">APIs de IA</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">Automação</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">Machine Learning</span>
+<span class="px-2.5 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary font-code-sm text-xs flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> RAG
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface font-code-sm text-xs">Prototipação</span>
+</div>
+</div>
+</section>
+<!-- SEÇÃO 3: PROJETOS COM FILTROS INTERATIVOS -->
+<section class="px-gutter-mobile py-space-xl flex flex-col gap-space-lg" id="projetos">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">code_blocks</span>
+<span class="font-label-caps text-xs uppercase tracking-wider">Portfólio de Aplicações</span>
+</div>
+<h2 class="font-headline-lg-mobile text-2xl sm:text-3xl font-bold text-on-surface">
+            Projetos Selecionados
+          </h2>
+<p class="font-body-sm text-on-surface-variant">
+            Implementações práticas, protótipos funcionais e sistemas desenvolvidos com foco em robustez, algoritmos e usabilidade.
+          </p>
+</div>
+<!-- Navegação de Abas / Categorias -->
+<div class="flex items-center gap-2 p-1.5 rounded-xl bg-surface-container-high border border-outline-variant/20 overflow-x-auto" id="project-filters">
+<button class="filter-btn px-3.5 py-2 rounded-lg font-code-sm text-xs bg-primary text-on-primary font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 shadow-sm" onclick="filterProjects('all', this)">
+<span class="material-symbols-outlined text-[16px]">apps</span> Todos (8)
+          </button>
+<button class="filter-btn px-3.5 py-2 rounded-lg font-code-sm text-xs bg-transparent text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all flex items-center gap-1.5" onclick="filterProjects('web', this)">
+<span class="material-symbols-outlined text-[16px]">globe</span> Web Dev (3)
+          </button>
+<button class="filter-btn px-3.5 py-2 rounded-lg font-code-sm text-xs bg-transparent text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all flex items-center gap-1.5" onclick="filterProjects('python', this)">
+<span class="material-symbols-outlined text-[16px]">data_object</span> Python (3)
+          </button>
+<button class="filter-btn px-3.5 py-2 rounded-lg font-code-sm text-xs bg-transparent text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all flex items-center gap-1.5" onclick="filterProjects('java', this)">
+<span class="material-symbols-outlined text-[16px]">coffee</span> Java (2)
+          </button>
+</div>
+<!-- Container dos Cards de Projetos -->
+<div class="flex flex-col gap-space-md" id="projects-container">
+<!-- Card Web 1: Jogo da Cobrinha -->
+<article class="project-card flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/20 shadow-md hover:border-primary/40 transition-all" data-category="web">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-code-sm text-xs font-semibold">Web / JS</span>
+<span class="font-code-sm text-xs text-on-surface-variant">DOM &amp; Eventos</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">videogame_asset</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface">Jogo da Cobrinha</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Implementação clássica e nostálgica do Snake Game manipulando diretamente a árvore DOM, captura de eventos de teclado touch-friendly, detecção de colisões em grade e lógica de pontuação contínua.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">HTML5</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">CSS3 Flexbox</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">JavaScript ES6</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs mt-auto">
+<a class="flex-1 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-center font-code-sm text-xs text-primary font-semibold flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="#contato">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Ver Projeto
+              </a>
+<a class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-center font-code-sm text-xs text-on-surface flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span> Código
+              </a>
+</div>
+</article>
+<!-- Card Web 2: Portfólio Web -->
+<article class="project-card flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/20 shadow-md hover:border-primary/40 transition-all" data-category="web">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-code-sm text-xs font-semibold">Web Design</span>
+<span class="font-code-sm text-xs text-on-surface-variant">Mobile-first</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">web</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface">Portfólio Web</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Interface responsiva, design system modular escuro e estética de engenharia de precisão com micro-interações semânticas e acessibilidade navegável.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">HTML Semântico</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Tailwind CSS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Vanilla JS</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs mt-auto">
+<a class="flex-1 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-center font-code-sm text-xs text-primary font-semibold flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="#inicio">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Ver Projeto
+              </a>
+<a class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-center font-code-sm text-xs text-on-surface flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span> Código
+              </a>
+</div>
+</article>
+<!-- Card Web 3: Interface ChatGPT com API -->
+<article class="project-card flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/20 shadow-md hover:border-secondary/40 transition-all" data-category="web">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-code-sm text-xs font-semibold">Web + IA</span>
+<span class="font-code-sm text-xs text-on-surface-variant">Server-Sent Events</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface">Interface do ChatGPT com API</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Chat UI interativo completo conectado diretamente aos endpoints da OpenAI. Suporte a streaming em tempo real, formatação de Markdown, syntax highlight e histórico de conversas em local storage.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">JavaScript Fetch</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">OpenAI REST API</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Async/Await</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs mt-auto">
+<a class="flex-1 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-center font-code-sm text-xs text-primary font-semibold flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="#ia">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Ver Projeto
+              </a>
+<a class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-center font-code-sm text-xs text-on-surface flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span> Código
+              </a>
+</div>
+</article>
+<!-- Card Python 1: Pedra, Papel e Tesoura -->
+<article class="project-card flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/20 shadow-md hover:border-primary/40 transition-all" data-category="python">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-code-sm text-xs font-semibold">Python</span>
+<span class="font-code-sm text-xs text-on-surface-variant">Estruturas de Decisão</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">front_hand</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface">Pedra, Papel e Tesoura</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Simulador modular com inteligência randômica e rastreamento de placar. Explora condicionais encadeadas, funções puras e validação de comandos no terminal.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Python 3</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Random Module</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">CLI / Modularity</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs mt-auto">
+<a class="flex-1 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-center font-code-sm text-xs text-primary font-semibold flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="#contato">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Ver Projeto
+              </a>
+<a class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-center font-code-sm text-xs text-on-surface flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span> Código
+              </a>
+</div>
+</article>
+<!-- Card Python 2: Adivinhe o Número -->
+<article class="project-card flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/20 shadow-md hover:border-primary/40 transition-all" data-category="python">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-code-sm text-xs font-semibold">Python</span>
+<span class="font-code-sm text-xs text-on-surface-variant">Loops &amp; Validações</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">pin</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface">Adivinhe o Número</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Algoritmo de adivinhação baseado em busca e lógica de tentativas. Conta com tratamento seguro de exceções para entradas incorretas e cálculo de pontuação baseado no número de passos.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">While Loops</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Try/Except</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Game Loop</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs mt-auto">
+<a class="flex-1 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-center font-code-sm text-xs text-primary font-semibold flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="#contato">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Ver Projeto
+              </a>
+<a class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-center font-code-sm text-xs text-on-surface flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span> Código
+              </a>
+</div>
+</article>
+<!-- Card Python 3: App de Sorteio - Mega-Sena -->
+<article class="project-card flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/20 shadow-md hover:border-primary/40 transition-all" data-category="python">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-code-sm text-xs font-semibold">Python</span>
+<span class="font-code-sm text-xs text-on-surface-variant">Estatística &amp; Sets</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">casino</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface">App de Sorteio — Mega-Sena</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Gerador de jogos probabilísticos e combinações aleatórias não repetidas. Utiliza conjuntos para validação de unicidade, ordenação algorítmica e exportação de relatórios rápidos de simulação.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Data Structures</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Sets &amp; Tuplas</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Algoritmos</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs mt-auto">
+<a class="flex-1 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-center font-code-sm text-xs text-primary font-semibold flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="#contato">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Ver Projeto
+              </a>
+<a class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-center font-code-sm text-xs text-on-surface flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span> Código
+              </a>
+</div>
+</article>
+<!-- Card Java 1: Aplicativo Relógio -->
+<article class="project-card flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/20 shadow-md hover:border-tertiary/40 transition-all" data-category="java">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-code-sm text-xs font-semibold">Java</span>
+<span class="font-code-sm text-xs text-on-surface-variant">Multithreading</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[20px]">schedule</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface">Aplicativo Relógio</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Cronômetro e relógio digital com precisão milimétrica. Emprega threads independentes e sincronizadas para evitar bloqueio da interface gráfica (Swing), além de suporte a cronometragem contínua.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Java SE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Java Swing / GUI</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Concurrency</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs mt-auto">
+<a class="flex-1 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-center font-code-sm text-xs text-primary font-semibold flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="#contato">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Ver Projeto
+              </a>
+<a class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-center font-code-sm text-xs text-on-surface flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span> Código
+              </a>
+</div>
+</article>
+<!-- Card Java 2: Testes de Componentes de Interface -->
+<article class="project-card flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/20 shadow-md hover:border-tertiary/40 transition-all" data-category="java">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-code-sm text-xs font-semibold">Java</span>
+<span class="font-code-sm text-xs text-on-surface-variant">UI Architecture</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[20px]">layers</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface">Testes de Componentes de Interface</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Laboratório desktop explorando a fundo o ciclo de vida dos componentes Swing e JavaFX. Contempla renderização customizada, listeners de eventos, layouts aninhados e tratamento de inputs de usuário.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">JavaFX / Swing</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">Event Listeners</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 font-code-sm text-[11px] text-on-surface">OOP Puro</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs mt-auto">
+<a class="flex-1 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-center font-code-sm text-xs text-primary font-semibold flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="#contato">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Ver Projeto
+              </a>
+<a class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-center font-code-sm text-xs text-on-surface flex items-center justify-center gap-1 transition-colors border border-outline-variant/30" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span> Código
+              </a>
+</div>
+</article>
+</div>
+</section>
+<!-- SEÇÃO 4: INTELIGÊNCIA ARTIFICIAL -->
+<section class="px-gutter-mobile py-space-xl bg-surface-container-lowest/70 border-y border-outline-variant/20 flex flex-col gap-space-lg" id="ia">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+<span class="font-label-caps text-xs uppercase tracking-wider">Laboratório de Inteligência Artificial</span>
+</div>
+<h2 class="font-headline-lg-mobile text-2xl sm:text-3xl font-bold text-on-surface">
+            Sistemas Cognitivos &amp; Modelos Preditivos
+          </h2>
+<p class="font-body-sm text-on-surface-variant">
+            Arquiteturas modernas integrando modelos de linguagem de larga escala e fluxos estruturados de inferência.
+          </p>
+</div>
+<!-- Cards de Competências de IA -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Card Chatbots com Python -->
+<div class="bg-surface-container p-space-md rounded-xl border border-outline-variant/20 flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">forum</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-on-surface">Chatbots com Python</h3>
+</div>
+<span class="font-code-sm text-xs text-primary font-semibold">Baixa Latência</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Implementação de assistentes inteligentes com os modelos Llama 3 via infraestrutura Groq e modelos da OpenAI, orquestrados em interfaces reativas através de Streamlit com resposta quase instantânea.
+            </p>
+<div class="flex flex-wrap gap-1.5 mt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-[11px] text-secondary">Groq LPUs</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-[11px] text-on-surface">OpenAI SDK</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-[11px] text-on-surface">Streamlit UI</span>
+</div>
+</div>
+<!-- Card Automação de Geração de Documentos -->
+<div class="bg-surface-container p-space-md rounded-xl border border-outline-variant/20 flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-on-surface">Automação de Documentos</h3>
+</div>
+<span class="font-code-sm text-xs text-secondary font-semibold">JSON Schema</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Pipelines de extração, sintetização e geração automática de relatórios estruturados com ChatGPT, com validação de tipagem, controle de formato e exportação programática.
+            </p>
+<div class="flex flex-wrap gap-1.5 mt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-[11px] text-on-surface">Structured Outputs</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-[11px] text-on-surface">Function Calling</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-[11px] text-on-surface">Python Docx/PDF</span>
+</div>
+</div>
+<!-- Card Engenharia de Prompt -->
+<div class="bg-surface-container p-space-md rounded-xl border border-outline-variant/20 flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-on-surface">Engenharia de Prompt</h3>
+</div>
+<span class="font-code-sm text-xs text-tertiary font-semibold">Otimização</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Elaboração metódica de system prompts de alta confiabilidade, chain-of-thought, restrições comportamentais e avaliações empíricas para mitigar alucinações e padronizar saídas determinísticas.
+            </p>
+</div>
+<!-- Card Machine Learning & IA Generativa -->
+<div class="bg-surface-container p-space-md rounded-xl border border-outline-variant/20 flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-on-surface">Machine Learning &amp; GenAI</h3>
+</div>
+<span class="font-code-sm text-xs text-primary font-semibold">Pipelines</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Aplicação de modelos supervisionados e não-supervisionados, tratamento de dados de treino e experimentação contínua com ajustes conceituais de parâmetros (temperature, top_p, frequency penalty).
+            </p>
+</div>
+<!-- RAG (Retrieval-Augmented Generation) -->
+<div class="bg-surface-container p-space-md rounded-xl border border-outline-variant/20 flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">database</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-on-surface">RAG — Retrieval-Augmented Gen</h3>
+</div>
+<span class="font-code-sm text-xs text-primary font-semibold">Vector DB</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Arquiteturas que potencializam modelos ao injetar dados proprietários externos via busca vetorial, gerando respostas contextualizadas sem necessidade de retreinamento de modelo.
+            </p>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center justify-between text-center mt-1 border border-outline-variant/20">
+<div class="flex flex-col items-center">
+<span class="font-code-sm text-[11px] text-on-surface-variant">Query</span>
+<span class="material-symbols-outlined text-[18px] text-primary">search</span>
+</div>
+<span class="text-on-surface-variant text-xs">➔</span>
+<div class="flex flex-col items-center">
+<span class="font-code-sm text-[11px] text-secondary">Embeddings</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">grid_goldenratio</span>
+</div>
+<span class="text-on-surface-variant text-xs">➔</span>
+<div class="flex flex-col items-center">
+<span class="font-code-sm text-[11px] text-tertiary">Vector Store</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">storage</span>
+</div>
+<span class="text-on-surface-variant text-xs">➔</span>
+<div class="flex flex-col items-center">
+<span class="font-code-sm text-[11px] text-primary">Contextual LLM</span>
+<span class="material-symbols-outlined text-[18px] text-primary">smart_toy</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Didático Interativo: Zero-Shot vs One-Shot vs Few-Shot -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-high border border-outline-variant/20 shadow-lg">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-base font-bold text-on-surface">Estratégias de Contexto: Shots</h3>
+<span class="font-code-sm text-xs text-primary font-semibold">Comparativo</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant">
+            A precisão de um modelo de linguagem aumenta drasticamente conforme fornecemos referências exemplares na entrada.
+          </p>
+<div class="grid grid-cols-1 gap-space-xs mt-1">
+<!-- Zero Shot -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-outline-variant/20">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-xs text-primary font-bold">1. Zero-Shot</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-code-sm text-[10px] text-on-surface-variant">0 Exemplos</span>
+</div>
+<p class="font-code-sm text-xs text-on-surface-variant bg-surface-container-lowest p-2 rounded leading-normal">
+<span class="text-primary font-medium">"Classifique o sentimento:"</span> 'Adorei o suporte rápido!' ➔ <span class="text-secondary font-semibold">Positivo</span>
+</p>
+</div>
+<!-- One Shot -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-outline-variant/20">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-xs text-secondary font-bold">2. One-Shot</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-code-sm text-[10px] text-on-surface-variant">1 Exemplo</span>
+</div>
+<p class="font-code-sm text-xs text-on-surface-variant bg-surface-container-lowest p-2 rounded leading-normal">
+<span class="text-secondary font-medium">Exemplo:</span> 'Demorou muito' = [Negativo, Peso 1]<br/>
+<span class="text-primary font-medium">"Classifique:"</span> 'Chegou antes do prazo' ➔ <span class="text-secondary font-semibold">[Positivo, Peso 2]</span>
+</p>
+</div>
+<!-- Few Shot -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-outline-variant/20">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-xs text-tertiary font-bold">3. Few-Shot</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-code-sm text-[10px] text-on-surface-variant">2+ Exemplos</span>
+</div>
+<p class="font-code-sm text-xs text-on-surface-variant bg-surface-container-lowest p-2 rounded leading-normal">
+                Múltiplos pares de Entrada/Saída detalhando casos extremos e ambiguidades, maximizando a consistência e eliminando alucinações.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SEÇÃO 5: PROTOTIPAÇÃO -->
+<section class="px-gutter-mobile py-space-xl flex flex-col gap-space-lg" id="prototipacao">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">architecture</span>
+<span class="font-label-caps text-xs uppercase tracking-wider">Metodologia Ágil</span>
+</div>
+<h2 class="font-headline-lg-mobile text-2xl sm:text-3xl font-bold text-on-surface">
+            Prototipação &amp; Google Stitch
+          </h2>
+<p class="font-body-sm text-on-surface-variant">
+            Aceleração do ciclo conceitual para código testável através de ferramentas modernas de design e prototipagem inteligente.
+          </p>
+</div>
+<!-- Destaque Google Stitch -->
+<div class="bg-surface-container p-space-md rounded-xl border border-outline-variant/20 flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">draw</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-base font-bold text-on-surface">Ideação com Google Stitch</h3>
+<span class="font-code-sm text-xs text-primary font-medium">Velocidade de Execução</span>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+            Uso avançado do Google Stitch para mapear jornadas de usuário, validar hipóteses de usabilidade e arquitetar interfaces responsivas com agilidade máxima antes da implementação final em código limpo.
+          </p>
+</div>
+<!-- Diagrama Visual do Fluxo de Desenvolvimento -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-low border border-outline-variant/20 shadow-sm">
+<span class="font-code-sm text-xs text-on-surface-variant uppercase tracking-wider mb-2 font-semibold">Fluxo de Engenharia &amp; Design</span>
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-space-xs text-center">
+<!-- Passo 1 -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col items-center gap-1 border border-outline-variant/20">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-code-sm text-xs font-bold">01</div>
+<span class="font-headline-sm text-sm font-bold text-on-surface">Ideia</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Briefing, requisitos e regras de negócio.</span>
+</div>
+<!-- Passo 2 -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col items-center gap-1 border border-secondary/30">
+<div class="w-8 h-8 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary font-code-sm text-xs font-bold">02</div>
+<span class="font-headline-sm text-sm font-bold text-secondary">Protótipo (Stitch)</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Design rápido, fluxos e validação visual.</span>
+</div>
+<!-- Passo 3 -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col items-center gap-1 border border-outline-variant/20">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-code-sm text-xs font-bold">03</div>
+<span class="font-headline-sm text-sm font-bold text-on-surface">Desenvolvimento</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Código semântico, componentização e APIs.</span>
+</div>
+<!-- Passo 4 -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col items-center gap-1 border border-primary/30">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-code-sm text-xs font-bold">04</div>
+<span class="font-headline-sm text-sm font-bold text-primary">Solução</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Deploy, monitoramento e IA em produção.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SEÇÃO 6: STACK / TECNOLOGIAS -->
+<section class="px-gutter-mobile py-space-xl bg-surface-container-lowest/70 border-y border-outline-variant/20 flex flex-col gap-space-lg" id="stack">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+<span class="font-label-caps text-xs uppercase tracking-wider">Arsenal Técnico</span>
+</div>
+<h2 class="font-headline-lg-mobile text-2xl sm:text-3xl font-bold text-on-surface">
+            Stack de Tecnologias
+          </h2>
+<p class="font-body-sm text-on-surface-variant">
+            Linguagens, ferramentas de nuvem, modelos de linguagem e frameworks aplicados diariamente.
+          </p>
+</div>
+<!-- Grid Moderno de Badges Tecnológicas -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-primary text-[24px]">html</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">HTML5</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Semântica &amp; SEO</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-primary text-[24px]">css</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">CSS3</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Flexbox &amp; Grid</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-tertiary/40 transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[24px]">javascript</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">JavaScript</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">ES6+ &amp; Async</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-primary text-[24px]">terminal</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">Python</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Backend &amp; Scripts</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-tertiary/40 transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[24px]">coffee</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">Java</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">POO &amp; Multithread</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-secondary/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-[24px]">api</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">OpenAI API</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">GPT-4o &amp; Embeddings</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-primary text-[24px]">bolt</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">Groq API</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Ultra High Speed</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-secondary/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-[24px]">view_in_ar</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">Streamlit</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">IA Web Apps</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-secondary/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-[24px]">smart_toy</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">ChatGPT</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Assistentes &amp; Ops</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-primary text-[24px]">model_training</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">Machine Learning</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Supervisionado</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-secondary/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-[24px]">search_insights</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">RAG</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Vector Retrieval</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-primary text-[24px]">edit_note</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">Prompt Eng.</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">CoT &amp; Guardrails</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/20 flex items-center gap-3 shadow-sm hover:border-secondary/40 transition-colors col-span-2 sm:col-span-1">
+<span class="material-symbols-outlined text-secondary text-[24px]">draw</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-sm text-on-surface truncate font-bold">Google Stitch</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">Prototipagem Ágil</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SEÇÃO 7: LINHA DE EVOLUÇÃO (TIMELINE CONTÍNUA) -->
+<section class="px-gutter-mobile py-space-xl flex flex-col gap-space-lg" id="evolucao">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">timeline</span>
+<span class="font-label-caps text-xs uppercase tracking-wider">Jornada Técnica</span>
+</div>
+<h2 class="font-headline-lg-mobile text-2xl sm:text-3xl font-bold text-on-surface">
+            Linha de Evolução
+          </h2>
+<p class="font-body-sm text-on-surface-variant">
+            A progressão contínua da lógica fundamental aos ecossistemas generativos e de recuperação vetorial.
+          </p>
+</div>
+<!-- Timeline Vertical Contínua Estilizada -->
+<div class="relative pl-6 flex flex-col gap-space-md before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-highest">
+<!-- Passo 1 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface"></div>
+<span class="font-code-sm text-xs text-primary font-bold">Passo 01</span>
+<span class="font-headline-sm text-base font-bold text-on-surface">Programação &amp; Lógica</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">Estruturas de controle, algoritmos, depuração e base analítica de computação.</p>
+</div>
+<!-- Passo 2 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface"></div>
+<span class="font-code-sm text-xs text-primary font-bold">Passo 02</span>
+<span class="font-headline-sm text-base font-bold text-on-surface">Desenvolvimento Web</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">HTML5 semântico, folhas de estilo responsivas e manipulação reativa da DOM.</p>
+</div>
+<!-- Passo 3 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface"></div>
+<span class="font-code-sm text-xs text-primary font-bold">Passo 03</span>
+<span class="font-headline-sm text-base font-bold text-on-surface">Python</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">Automação de scripts, manipulação de dados estruturados e microsserviços.</p>
+</div>
+<!-- Passo 4 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-tertiary ring-4 ring-surface"></div>
+<span class="font-code-sm text-xs text-tertiary font-bold">Passo 04</span>
+<span class="font-headline-sm text-base font-bold text-on-surface">Java</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">Orientação a objetos estrita, multithreading concorrente e interfaces Swing/FX.</p>
+</div>
+<!-- Passo 5 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface"></div>
+<span class="font-code-sm text-xs text-secondary font-bold">Passo 05</span>
+<span class="font-headline-sm text-base font-bold text-on-surface">APIs &amp; Integrações</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">Endpoints RESTful, consumo assíncrono, autenticação de segurança e tokens.</p>
+</div>
+<!-- Passo 6 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface"></div>
+<span class="font-code-sm text-xs text-secondary font-bold">Passo 06</span>
+<span class="font-headline-sm text-base font-bold text-on-surface">Inteligência Artificial</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">Adoção de modelos fundamentais, orquestração e inferência automatizada.</p>
+</div>
+<!-- Passo 7 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface"></div>
+<span class="font-code-sm text-xs text-secondary font-bold">Passo 07</span>
+<span class="font-headline-sm text-base font-bold text-on-surface">Engenharia de Prompt</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">Otimização semântica, few-shot conditioning e padronização JSON rigorosa.</p>
+</div>
+<!-- Passo 8 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface"></div>
+<span class="font-code-sm text-xs text-primary font-bold">Passo 08</span>
+<span class="font-headline-sm text-base font-bold text-on-surface">RAG &amp; Vector Databases</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">Bancos vetoriais, geração aumentada por recuperação e indexação semântica.</p>
+</div>
+<!-- Passo 9 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface"></div>
+<span class="font-code-sm text-xs text-primary font-bold">Passo 09</span>
+<span class="font-headline-sm text-base font-bold text-on-surface">Machine Learning</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">Treinamento preditivo, pipelines de features e avaliação empírica de métricas.</p>
+</div>
+<!-- Passo 10 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface animate-pulse"></div>
+<span class="font-code-sm text-xs text-primary font-bold">Passo 10 (Estado Atual)</span>
+<span class="font-headline-sm text-base font-bold text-primary">Prototipação &amp; Produto</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">Criação ágil e completa do conceito até o produto final no mercado com Google Stitch.</p>
+</div>
+</div>
+</section>
+<!-- SEÇÃO 8: CONTATO -->
+<section class="px-gutter-mobile py-space-xl bg-surface-container-lowest/80 border-t border-outline-variant/20 flex flex-col gap-space-lg" id="contato">
+<!-- Card de Alto Impacto -->
+<div class="relative p-space-lg rounded-2xl bg-gradient-to-b from-surface-container-high to-surface-container flex flex-col gap-space-md shadow-2xl border border-outline-variant/30 overflow-hidden">
+<!-- Glow decorativo interno -->
+<div class="absolute -top-16 -right-16 w-52 h-52 bg-primary/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span class="font-label-caps text-xs uppercase tracking-wider">Inicie uma Conversa</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-lg-mobile text-2xl sm:text-3xl font-bold text-on-surface">
+              Vamos conversar?
+            </h2>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">
+              Estou aberto a oportunidades profissionais estratégicas, projetos sob medida e consultorias em engenharia web &amp; inteligência artificial.
+            </p>
+</div>
+<!-- Botão Principal em Destaque -->
+<a class="flex items-center justify-center gap-space-xs w-full py-3.5 rounded-xl bg-gradient-to-r from-primary-container via-primary to-secondary-container text-on-primary font-headline-sm text-sm font-bold shadow-lg hover:shadow-cyan-500/25 active:scale-95 transition-all" href="mailto:contato@deveia.portfolio?subject=Novo%20Projeto%20/%20Oportunidade">
+<span class="material-symbols-outlined text-[22px]">mail</span>
+<span>Vamos conversar</span>
+</a>
+<!-- Links Rápidos Estilizados com Ícones -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs mt-space-xs">
+<!-- Link GitHub Oficial -->
+<a class="p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-bright border border-outline-variant/20 transition-all flex items-center gap-3 group" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-sm text-xs text-on-surface font-bold group-hover:text-primary">GitHub</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant truncate">github.com/SOHQ00</span>
+</div>
+</a>
+<!-- Link LinkedIn -->
+<a class="p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-bright border border-outline-variant/20 transition-all flex items-center gap-3 group" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">group</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-sm text-xs text-on-surface font-bold group-hover:text-primary">LinkedIn</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant truncate">linkedin.com/in/dev-ia</span>
+</div>
+</a>
+<!-- Link E-mail -->
+<a class="p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-bright border border-outline-variant/20 transition-all flex items-center gap-3 group" href="mailto:contato@deveia.portfolio">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-sm text-xs text-on-surface font-bold group-hover:text-secondary">E-mail Direto</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant truncate">contato@deveia.portfolio</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- FOOTER -->
+<footer class="w-full mt-auto px-gutter-mobile py-space-xl bg-surface-container-lowest border-t border-outline-variant/20 flex flex-col items-center gap-space-md">
+<div class="flex items-center justify-between w-full max-w-container-max">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-code-sm text-xs text-on-surface-variant">Systems Fully Operational</span>
+</div>
+<a class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl bg-surface-container text-on-surface-variant hover:text-primary border border-outline-variant/30 transition-colors" href="#inicio" title="Voltar ao Topo">
+<span class="material-symbols-outlined">arrow_upward</span>
+</a>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-x-space-md gap-y-2">
+<a class="font-code-sm text-xs text-on-surface-variant hover:text-primary transition-colors py-1" href="#inicio">#inicio</a>
+<a class="font-code-sm text-xs text-on-surface-variant hover:text-primary transition-colors py-1" href="#sobre">#sobre</a>
+<a class="font-code-sm text-xs text-on-surface-variant hover:text-primary transition-colors py-1" href="#projetos">#projetos</a>
+<a class="font-code-sm text-xs text-on-surface-variant hover:text-primary transition-colors py-1" href="#ia">#ia</a>
+<a class="font-code-sm text-xs text-on-surface-variant hover:text-primary transition-colors py-1" href="#prototipacao">#prototipagem</a>
+<a class="font-code-sm text-xs text-on-surface-variant hover:text-primary transition-colors py-1" href="#stack">#stack</a>
+<a class="font-code-sm text-xs text-on-surface-variant hover:text-primary transition-colors py-1" href="#contato">#contato</a>
+<a class="font-code-sm text-xs text-primary font-bold hover:underline transition-colors py-1 flex items-center gap-1" href="https://github.com/SOHQ00" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[14px]">terminal</span> GitHub Oficial
+        </a>
+</div>
+<p class="font-code-sm text-xs text-outline text-center">
+        © 2025 Dev &amp; IA Portfolio. Arquitetado e codificado com precisão.
+      </p>
+</footer>
+</main>
+<!-- BARRA DE NAVEGAÇÃO INFERIOR FIXA (MOBILE & DESKTOP DOCK) -->
+<nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant/30 shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
+<div class="flex justify-around items-center h-16 px-space-xs max-w-lg mx-auto">
+<a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-xs text-primary transition-colors" href="#inicio">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+<span class="font-code-sm text-[11px] font-semibold">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-primary transition-colors" href="#sobre">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span class="font-code-sm text-[11px]">Sobre</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-primary transition-colors" href="#projetos">
+<span class="material-symbols-outlined text-[20px]">code_blocks</span>
+<span class="font-code-sm text-[11px]">Projetos</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-primary transition-colors" href="#ia">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+<span class="font-code-sm text-[11px]">IA Lab</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-primary transition-colors" href="#contato">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span class="font-code-sm text-[11px]">Contato</span>
+</a>
+</div>
+</nav>
+<!-- SCRIPT DE FILTRAGEM DOS PROJETOS -->
+<script>
+    function filterProjects(category, buttonElement) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+        btn.classList.add('bg-transparent', 'text-on-surface-variant');
+      });
+      
+      if (buttonElement) {
+        buttonElement.classList.remove('bg-transparent', 'text-on-surface-variant');
+        buttonElement.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+      }
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (category === 'all' || cardCategory === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body></html>
